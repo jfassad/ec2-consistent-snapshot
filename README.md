@@ -179,6 +179,11 @@ ec2-consistent-snapshot - Create EBS snapshots on EC2 w/consistent filesystem/db
     removed after the EBS snapshot is taken.  This option will be ignored
     with --mysql-stop
 
+  --mysql-slave-status-file FILE
+    Store the SLAVE STATUS output in a file on the snapshot. It will be
+    removed after the EBS snapshot is taken.  This option will be ignored
+    with --mysql-stop
+
 - --mysql-stop
 
     Indicates that the volume contains data files for a running MySQL database.
